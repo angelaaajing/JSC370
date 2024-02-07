@@ -1,5 +1,7 @@
 ---
 title: "Lab 05 - Data Wrangling"
+author: "Jing Yu"
+date: "02-07-2024"
 output: 
   github_document: default
   tufte::tufte_html:
@@ -90,7 +92,7 @@ Once you are done setting up the project, you can now start working with the MET
 
 1. Load the `data.table` (and the `dtplyr` and `dplyr` packages), `mgcv`, `ggplot2`, `leaflet`, `kableExtra`.
 
-```{r packages warnings=FALSE}
+```{r packages = "warnings=FALSE"}
 library(data.table)
 library(dtplyr)
 library(dplyr)
@@ -101,7 +103,7 @@ library(kableExtra)
 ```
 
 
-```{r, eval=FALSE}
+```{r, eval=TRUE}
 fn <- "https://raw.githubusercontent.com/JSC370/JSC370-2024/main/data/met_all_2023.gz"
 if (!file.exists("met_all_2023.gz"))
   download.file(fn, destfile = "met_all_2023.gz")
@@ -110,7 +112,7 @@ met <- data.table::fread("met_all_2023.gz")
 
 2. Load the met data from https://github.com/JSC370/JSC370-2024/main/data/met_all_2023.gz or  (Use https://raw.githubusercontent.com/JSC370/JSC370-2024/main/data/met_all_2023.gz to download programmatically), and also the station data. For the latter, you can use the code we used during lecture to pre-process the stations data:
 
-```{r stations-data, eval = FALSE}
+```{r stations-data, eval = TRUE}
 # Download the data
 stations <- fread("ftp://ftp.ncdc.noaa.gov/pub/data/noaa/isd-history.csv")
 stations[, USAF := as.integer(USAF)]
@@ -131,12 +133,19 @@ stations[, n := 1:.N, by = .(USAF)]
 stations <- stations[n == 1,][, n := NULL]
 
 # Read in the met data and fix lat, lon, temp
+met$lat <- met$lat/1000
+met$lon <- met$lon/1000
+met$temp <- met$temp/10
+met$wind.sp <- met$wind.sp/10
+met$atm.press <- met$atm.press/10
 ```
 
 3. Merge the data as we did during the lecture. Use the `merge()` code and you can also try the tidy way with `left_join()`
 
 ```{r}
-
+met <- merge(x = met, y = stations, 
+             by.x  = "USAFID", by.y  = "USAF", 
+             all.x = TRUE, all.y = FALSE)
 ```
 
 ## Question 1: Identifying Representative Stations
@@ -144,13 +153,35 @@ stations <- stations[n == 1,][, n := NULL]
 Across all weather stations, which stations have the median values of temperature, wind speed, and atmospheric pressure? Using the `quantile()` function, identify these three stations. Do they coincide?
 
 ```{r}
+# Calculate median values for temperature, wind speed, and atmospheric pressure
+medians <- met[, .(temp_median = quantile(temp, 0.5, na.rm = TRUE),
+                   wind.sp_median = quantile(wind.sp, 0.5, na.rm = TRUE),
+                   atm.press_median = quantile(atm.press, 0.5, na.rm = TRUE)
+                   )]
 
+# Median by station
+station_med <- met[, .(temp = quantile(temp, 0.5, na.rm = TRUE),
+                       wind.sp = quantile(wind.sp, 0.5, na.rm = TRUE),
+                       atm.press = quantile(atm.press, 0.5, na.rm = TRUE)
+                       ),
+                   by = .(USAFID, STATE)]
+
+# Identify stations with median values
+station_med[, temp_dist:= abs(temp - medians$temp_median)]
+station_med_temp <- station_med[temp_dist == 0]
+
+station_med[, wind.sp_dist:= abs(wind.sp - medians$wind.sp_median)]
+station_med_wind.sp <- station_med[wind.sp_dist == 0]
+
+station_med[, atm.press_dist:= abs(atm.press - medians$atm.press_median)]
+station_med_atm.press <- station_med[atm.press_dist == 0]
 ```
 
 Next identify the stations have these median values.
 
 ```{r}
-
+coincide <- station_med[temp_dist==0 & wind.sp_dist == 0 & atm.press_dist == 0]
+coincide
 ```
 
 Knit the document, commit your changes, and save it on GitHub. Don't forget to add `README.md` to the tree, the first time you render it.
