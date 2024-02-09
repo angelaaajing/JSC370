@@ -7,6 +7,7 @@ output:
   tufte::tufte_html:
     css: style.css
 link-citations: yes
+always_allow_html: true
 ---
 
 # Learning goals
@@ -203,9 +204,9 @@ station_med <- merge(station_med, state_medians, by = "STATE", all.x = TRUE)
 station_med[, euclidean_dist := sqrt((temp_median - temp)^2 + (wind.sp_median - wind.sp)^2)]
 
 # Representative Stations per State (containing ties)
-station_med[, .(USAFID = USAFID[which(euclidean_dist == min(euclidean_dist, na.rm = TRUE))], 
-                euclidean_dist = min(euclidean_dist, na.rm = TRUE)),
+station_med <- station_med[, .(USAFID = USAFID[which(euclidean_dist == min(euclidean_dist, na.rm = TRUE))]),
             by = .(STATE)]
+station_med
 ```
 
 Knit the doc and save it on GitHub.
@@ -215,7 +216,46 @@ Knit the doc and save it on GitHub.
 For each state, identify which station is closest to the geographic mid-point (median) of the state. Combining these with the stations you identified in the previous question, use `leaflet()` to visualize all ~100 points in the same figure, applying different colors for the geographic median and the temperature and wind speed median.
 
 ```{r}
+# Calculate median latitude and longitude for each state
+state_midpoints <- met[, .(median_lat = quantile(lat, 0.5, na.rm = TRUE),
+                           median_lon = quantile(lon, 0.5, na.rm = TRUE)),
+                      by = .(STATE)]
 
+# Calculate median values for lon and lat for each station
+station_midpoints <- met[, .(lon = quantile(lon, 0.5, na.rm = TRUE),
+                             lat = quantile(lat, 0.5, na.rm = TRUE)), 
+                         by = .(USAFID, STATE)]
+
+# Join state midpoints with met
+station_geo <- merge(station_midpoints, state_midpoints, by = "STATE", all.x = TRUE)
+
+# Calculate distance between each station and its state's midpoint
+station_geo[, midpoint_dist := sqrt((lat - median_lat)^2 + (lon - median_lon)^2)]
+
+# Find closest station to each state's midpoint
+station_geo <- station_geo[, .(USAFID = USAFID[which(midpoint_dist == min(midpoint_dist, na.rm = TRUE))]),by =.(STATE)]
+station_geo
+```
+
+```{r}
+# Combining these with the stations identified in the previous question
+station_med <- merge(station_med, station_midpoints, 
+                     by = c("USAFID", "STATE"), 
+                     all.x = TRUE, all.y = FALSE)
+
+station_geo <- merge(station_geo, station_midpoints, 
+                     by = c("USAFID", "STATE"), 
+                     all.x = TRUE, all.y = FALSE)
+
+map <- leaflet(station_geo) %>%
+  addTiles() %>%
+  addCircleMarkers(~lon, ~lat, 
+                   color = "blue", radius = 5, 
+                   popup = ~paste("USAFID:", USAFID, "<br>", "STATE", STATE)) %>%
+  addCircleMarkers(data = station_med, ~lon, ~lat, 
+                   color = "red", radius = 5, 
+                   popup = ~paste("USAFID:", USAFID, "<br>", "STATE", STATE))
+map
 ```
 
 Knit the doc and save it on GitHub.
