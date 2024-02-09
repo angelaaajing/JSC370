@@ -261,6 +261,37 @@ forget to add `README.md` to the tree, the first time you render it.
 Now let’s find the weather stations by state with closest temperature
 and wind speed based on the euclidean distance from these medians.
 
+``` r
+# Calculate median values for temperature and wind speed for each state
+state_medians <- met[, .(temp_median = quantile(temp, 0.5, na.rm = TRUE),
+                         wind.sp_median = quantile(wind.sp, 0.5, na.rm = TRUE)),
+                     by = .(STATE)]
+
+# Join state medians with station_med
+station_med <- merge(station_med, state_medians, by = "STATE", all.x = TRUE)
+
+# Calculate Euclidean distance
+station_med[, euclidean_dist := sqrt((temp_median - temp)^2 + (wind.sp_median - wind.sp)^2)]
+
+# Representative Stations per State (containing ties)
+station_med[, .(USAFID = USAFID[which(euclidean_dist == min(euclidean_dist, na.rm = TRUE))], 
+                euclidean_dist = min(euclidean_dist, na.rm = TRUE)),
+            by = .(STATE)]
+```
+
+    ##      STATE USAFID euclidean_dist
+    ##   1:    AL 720265            0.2
+    ##   2:    AR 722188            0.1
+    ##   3:    AR 723405            0.1
+    ##   4:    AR 743312            0.1
+    ##   5:    AZ 722728            0.5
+    ##  ---                            
+    ## 100:    WI 726415            0.0
+    ## 101:    WI 726457            0.0
+    ## 102:    WI 726509            0.0
+    ## 103:    WV 724177            0.5
+    ## 104:    WY 720521            0.0
+
 Knit the doc and save it on GitHub.
 
 ## Question 3: In the Geographic Center?

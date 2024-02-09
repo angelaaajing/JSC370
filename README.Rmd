@@ -191,7 +191,21 @@ Knit the document, commit your changes, and save it on GitHub. Don't forget to a
 Now let's find the weather stations by state with closest temperature and wind speed based on the euclidean distance from these medians. 
 
 ```{r}
+# Calculate median values for temperature and wind speed for each state
+state_medians <- met[, .(temp_median = quantile(temp, 0.5, na.rm = TRUE),
+                         wind.sp_median = quantile(wind.sp, 0.5, na.rm = TRUE)),
+                     by = .(STATE)]
 
+# Join state medians with station_med
+station_med <- merge(station_med, state_medians, by = "STATE", all.x = TRUE)
+
+# Calculate Euclidean distance
+station_med[, euclidean_dist := sqrt((temp_median - temp)^2 + (wind.sp_median - wind.sp)^2)]
+
+# Representative Stations per State (containing ties)
+station_med[, .(USAFID = USAFID[which(euclidean_dist == min(euclidean_dist, na.rm = TRUE))], 
+                euclidean_dist = min(euclidean_dist, na.rm = TRUE)),
+            by = .(STATE)]
 ```
 
 Knit the doc and save it on GitHub.
