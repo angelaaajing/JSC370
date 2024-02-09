@@ -396,8 +396,8 @@ map <- leaflet(station_geo) %>%
 map
 ```
 
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-ffeec03042bfd623a883" style="width:672px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-ffeec03042bfd623a883">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addCircleMarkers","args":[[39,37.578,30.558,37.4,41.384,41.066,48.39,38.947,40.28,35.38,32.633,35.357,35.582,28.821,40.624,33.178,32.32,31.133,33.45,33.466,35.257,39.173,39.133,40.483,38.068,39.601,41.597,40.218,41.701,43.322,41.691,40.893,40.219,43.205,44.533,44.533,39.05,44.783,43.767,45.544,43.062,43.567,44.5,47.517,47.445,42.212,36.985,33.967],[-80.274,-84.77,-92.099,-77.517,-72.506,-86.182,-100.024,-92.683,-83.115,-86.246,-83.6,-96.943,-79.101,-81.81,-74.669,-86.782,-90.078,-97.717,-105.516,-111.721,-93.095,-76.684,-75.467,-88.95,-97.861,-116.005,-71.412,-76.855,-74.795,-84.688,-93.566,-97.997,-111.723,-71.503,-69.667,-72.615,-105.516,-89.667,-99.318,-94.052,-108.447,-116.24,-123.283,-111.183,-122.314,-71.114,-120.11,-80.467],5,null,null,{"interactive":true,"className":"","stroke":true,"color":"blue","weight":5,"opacity":0.5,"fill":true,"fillColor":"blue","fillOpacity":0.2},null,null,["USAFID: 720328 <br> STATE WV","USAFID: 720448 <br> STATE KY","USAFID: 720468 <br> STATE LA","USAFID: 720498 <br> STATE VA","USAFID: 720545 <br> STATE CT","USAFID: 720736 <br> STATE IN","USAFID: 720867 <br> STATE ND","USAFID: 720869 <br> STATE MO","USAFID: 720928 <br> STATE OH","USAFID: 721031 <br> STATE TN","USAFID: 722175 <br> STATE GA","USAFID: 722187 <br> STATE OK","USAFID: 722201 <br> STATE NC","USAFID: 722213 <br> STATE FL","USAFID: 722247 <br> STATE NJ","USAFID: 722300 <br> STATE AL","USAFID: 722350 <br> STATE MS","USAFID: 722570 <br> STATE TX","USAFID: 722683 <br> STATE NM","USAFID: 722783 <br> STATE AZ","USAFID: 723429 <br> STATE AR","USAFID: 724060 <br> STATE MD","USAFID: 724088 <br> STATE DE","USAFID: 724397 <br> STATE IL","USAFID: 724506 <br> STATE KS","USAFID: 724770 <br> STATE NV","USAFID: 725074 <br> STATE RI","USAFID: 725118 <br> STATE PA","USAFID: 725145 <br> STATE NY","USAFID: 725405 <br> STATE MI","USAFID: 725466 <br> STATE IA","USAFID: 725513 <br> STATE NE","USAFID: 725724 <br> STATE UT","USAFID: 726050 <br> STATE NH","USAFID: 726073 <br> STATE ME","USAFID: 726114 <br> STATE VT","USAFID: 726396 <br> STATE CO","USAFID: 726465 <br> STATE WI","USAFID: 726530 <br> STATE SD","USAFID: 726550 <br> STATE MN","USAFID: 726720 <br> STATE WY","USAFID: 726810 <br> STATE ID","USAFID: 726945 <br> STATE OR","USAFID: 727755 <br> STATE MT","USAFID: 727930 <br> STATE WA","USAFID: 744907 <br> STATE MA","USAFID: 745046 <br> STATE CA","USAFID: 747900 <br> STATE SC"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addCircleMarkers","args":[[31.397,32.915,36.018,43.677,40.947,40.435,41.828,40.333,44.883,41.444,40.617,29.976,33.25,34,33.828,34.4,40.225,40.204,48.884,48.929,47.29,48.39,47.796,46.768,32.214,35.178,43.621,25.91,44.074,26.918,26,41.584,35.541,35.417,35.668,35.212,32.516,30.833,32.338,32.359,29.339,29.36,33.45,31.421,33.938,35.317,35.554,36.77,34.917,38.721,39.366,38.69,39.404,38.23,38.817,39.374,39.717,39.417,40.859,41.164,41.921,42.468,41.53,43.111,42.264,41.407,41.276,41.674,41.691,41.019,40.722,41.367,41.299,38.142,40.6,40.789,40.219,41.194,42.545,42.167,43.642,42.9,45.462,44.739,42.617,44.267,43.426,43.389,46.447,45.15,44.018,45.807,43.595,44.843,46.87,46.782,47.646,46.117,34.048,40.948,39.78,32.483,26.079,33.317],[-84.895,-85.963,-75.671,-92.18,-91.511,-75.382,-94.16,-82.517,-72.233,-106.827,-74.25,-92.084,-81.383,-80.367,-79.122,-80.117,-83.352,-84.532,-99.621,-103.297,-101.581,-100.024,-103.254,-100.894,-83.128,-86.066,-96.216,-80.283,-93.553,-81.994,-80.241,-95.339,-78.39,-80.151,-95.949,-91.737,-84.942,-93.333,-90.221,-95.404,-98.472,-99.174,-105.516,-110.846,-118.386,-77.633,-87.179,-90.322,-92.15,-77.515,-75.078,-75.362,-77.975,-85.663,-92.215,-99.83,-104.75,-118.716,-74.056,-73.127,-71.491,-71.295,-71.283,-76.104,-84.456,-95.047,-91.673,-93.022,-93.566,-93.359,-95.026,-91.15,-93.114,-76.429,-98.426,-99.771,-111.723,-112.016,-113.768,-120.4,-70.304,-72.267,-69.596,-85.568,-89.033,-88.517,-88.703,-99.843,-95.212,-93.217,-92.831,-108.546,-118.957,-117.809,-68.017,-100.757,-101.44,-122.893,-94.402,-87.183,-90.238,-81.737,-80.162,-79.317],5,null,null,{"interactive":true,"className":"","stroke":true,"color":"red","weight":5,"opacity":0.5,"fill":true,"fillColor":"red","fillOpacity":0.2},null,null,["USAFID: 720257 <br> STATE GA","USAFID: 720265 <br> STATE AL","USAFID: 720282 <br> STATE NC","USAFID: 720283 <br> STATE MN","USAFID: 720309 <br> STATE IA","USAFID: 720324 <br> STATE PA","USAFID: 720412 <br> STATE IA","USAFID: 720414 <br> STATE OH","USAFID: 720493 <br> STATE VT","USAFID: 720521 <br> STATE WY","USAFID: 720581 <br> STATE NJ","USAFID: 720587 <br> STATE LA","USAFID: 720602 <br> STATE SC","USAFID: 720611 <br> STATE SC","USAFID: 720613 <br> STATE SC","USAFID: 720633 <br> STATE SC","USAFID: 720651 <br> STATE OH","USAFID: 720713 <br> STATE OH","USAFID: 720853 <br> STATE ND","USAFID: 720861 <br> STATE ND","USAFID: 720866 <br> STATE ND","USAFID: 720867 <br> STATE ND","USAFID: 720868 <br> STATE ND","USAFID: 720871 <br> STATE ND","USAFID: 720962 <br> STATE GA","USAFID: 720974 <br> STATE TN","USAFID: 722006 <br> STATE MN","USAFID: 722024 <br> STATE FL","USAFID: 722032 <br> STATE MN","USAFID: 722034 <br> STATE FL","USAFID: 722037 <br> STATE FL","USAFID: 722097 <br> STATE IA","USAFID: 722131 <br> STATE NC","USAFID: 722148 <br> STATE NC","USAFID: 722164 <br> STATE OK","USAFID: 722188 <br> STATE AR","USAFID: 722255 <br> STATE GA","USAFID: 722334 <br> STATE LA","USAFID: 722354 <br> STATE MS","USAFID: 722448 <br> STATE TX","USAFID: 722523 <br> STATE TX","USAFID: 722533 <br> STATE TX","USAFID: 722683 <br> STATE NM","USAFID: 722728 <br> STATE AZ","USAFID: 722950 <br> STATE CA","USAFID: 723067 <br> STATE NC","USAFID: 723249 <br> STATE TN","USAFID: 723300 <br> STATE MO","USAFID: 723405 <br> STATE AR","USAFID: 724036 <br> STATE VA","USAFID: 724075 <br> STATE NJ","USAFID: 724093 <br> STATE DE","USAFID: 724177 <br> STATE WV","USAFID: 724235 <br> STATE KY","USAFID: 724450 <br> STATE MO","USAFID: 724655 <br> STATE KS","USAFID: 724695 <br> STATE CO","USAFID: 724885 <br> STATE NV","USAFID: 725025 <br> STATE NJ","USAFID: 725040 <br> STATE CT","USAFID: 725054 <br> STATE RI","USAFID: 725059 <br> STATE MA","USAFID: 725079 <br> STATE RI","USAFID: 725190 <br> STATE NY","USAFID: 725395 <br> STATE MI","USAFID: 725453 <br> STATE IA","USAFID: 725454 <br> STATE IA","USAFID: 725464 <br> STATE IA","USAFID: 725466 <br> STATE IA","USAFID: 725469 <br> STATE IA","USAFID: 725479 <br> STATE IA","USAFID: 725487 <br> STATE IA","USAFID: 725493 <br> STATE IA","USAFID: 725514 <br> STATE MD","USAFID: 725525 <br> STATE NE","USAFID: 725624 <br> STATE NE","USAFID: 725724 <br> STATE UT","USAFID: 725750 <br> STATE UT","USAFID: 725867 <br> STATE ID","USAFID: 725976 <br> STATE OR","USAFID: 726060 <br> STATE ME","USAFID: 726165 <br> STATE NH","USAFID: 726190 <br> STATE ME","USAFID: 726387 <br> STATE MI","USAFID: 726415 <br> STATE WI","USAFID: 726457 <br> STATE WI","USAFID: 726509 <br> STATE WI","USAFID: 726518 <br> STATE SD","USAFID: 726561 <br> STATE MN","USAFID: 726577 <br> STATE MN","USAFID: 726596 <br> STATE MN","USAFID: 726770 <br> STATE MT","USAFID: 726830 <br> STATE OR","USAFID: 726886 <br> STATE OR","USAFID: 727120 <br> STATE ME","USAFID: 727640 <br> STATE ND","USAFID: 727677 <br> STATE ND","USAFID: 727924 <br> STATE WA","USAFID: 743312 <br> STATE AR","USAFID: 744660 <br> STATE IN","USAFID: 744666 <br> STATE IL","USAFID: 747805 <br> STATE GA","USAFID: 747830 <br> STATE FL","USAFID: 747918 <br> STATE SC"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[25.91,48.929],"lng":[-123.283,-68.017]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-ad80a3e32822349c90e7" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-ad80a3e32822349c90e7">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addCircleMarkers","args":[[39,37.578,30.558,37.4,41.384,41.066,48.39,38.947,40.28,35.38,32.633,35.357,35.582,28.821,40.624,33.178,32.32,31.133,33.45,33.466,35.257,39.173,39.133,40.483,38.068,39.601,41.597,40.218,41.701,43.322,41.691,40.893,40.219,43.205,44.533,44.533,39.05,44.783,43.767,45.544,43.062,43.567,44.5,47.517,47.445,42.212,36.985,33.967],[-80.274,-84.77,-92.099,-77.517,-72.506,-86.182,-100.024,-92.683,-83.115,-86.246,-83.6,-96.943,-79.101,-81.81,-74.669,-86.782,-90.078,-97.717,-105.516,-111.721,-93.095,-76.684,-75.467,-88.95,-97.861,-116.005,-71.412,-76.855,-74.795,-84.688,-93.566,-97.997,-111.723,-71.503,-69.667,-72.615,-105.516,-89.667,-99.318,-94.052,-108.447,-116.24,-123.283,-111.183,-122.314,-71.114,-120.11,-80.467],5,null,null,{"interactive":true,"className":"","stroke":true,"color":"blue","weight":5,"opacity":0.5,"fill":true,"fillColor":"blue","fillOpacity":0.2},null,null,["USAFID: 720328 <br> STATE WV","USAFID: 720448 <br> STATE KY","USAFID: 720468 <br> STATE LA","USAFID: 720498 <br> STATE VA","USAFID: 720545 <br> STATE CT","USAFID: 720736 <br> STATE IN","USAFID: 720867 <br> STATE ND","USAFID: 720869 <br> STATE MO","USAFID: 720928 <br> STATE OH","USAFID: 721031 <br> STATE TN","USAFID: 722175 <br> STATE GA","USAFID: 722187 <br> STATE OK","USAFID: 722201 <br> STATE NC","USAFID: 722213 <br> STATE FL","USAFID: 722247 <br> STATE NJ","USAFID: 722300 <br> STATE AL","USAFID: 722350 <br> STATE MS","USAFID: 722570 <br> STATE TX","USAFID: 722683 <br> STATE NM","USAFID: 722783 <br> STATE AZ","USAFID: 723429 <br> STATE AR","USAFID: 724060 <br> STATE MD","USAFID: 724088 <br> STATE DE","USAFID: 724397 <br> STATE IL","USAFID: 724506 <br> STATE KS","USAFID: 724770 <br> STATE NV","USAFID: 725074 <br> STATE RI","USAFID: 725118 <br> STATE PA","USAFID: 725145 <br> STATE NY","USAFID: 725405 <br> STATE MI","USAFID: 725466 <br> STATE IA","USAFID: 725513 <br> STATE NE","USAFID: 725724 <br> STATE UT","USAFID: 726050 <br> STATE NH","USAFID: 726073 <br> STATE ME","USAFID: 726114 <br> STATE VT","USAFID: 726396 <br> STATE CO","USAFID: 726465 <br> STATE WI","USAFID: 726530 <br> STATE SD","USAFID: 726550 <br> STATE MN","USAFID: 726720 <br> STATE WY","USAFID: 726810 <br> STATE ID","USAFID: 726945 <br> STATE OR","USAFID: 727755 <br> STATE MT","USAFID: 727930 <br> STATE WA","USAFID: 744907 <br> STATE MA","USAFID: 745046 <br> STATE CA","USAFID: 747900 <br> STATE SC"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addCircleMarkers","args":[[31.397,32.915,36.018,43.677,40.947,40.435,41.828,40.333,44.883,41.444,40.617,29.976,33.25,34,33.828,34.4,40.225,40.204,48.884,48.929,47.29,48.39,47.796,46.768,32.214,35.178,43.621,25.91,44.074,26.918,26,41.584,35.541,35.417,35.668,35.212,32.516,30.833,32.338,32.359,29.339,29.36,33.45,31.421,33.938,35.317,35.554,36.77,34.917,38.721,39.366,38.69,39.404,38.23,38.817,39.374,39.717,39.417,40.859,41.164,41.921,42.468,41.53,43.111,42.264,41.407,41.276,41.674,41.691,41.019,40.722,41.367,41.299,38.142,40.6,40.789,40.219,41.194,42.545,42.167,43.642,42.9,45.462,44.739,42.617,44.267,43.426,43.389,46.447,45.15,44.018,45.807,43.595,44.843,46.87,46.782,47.646,46.117,34.048,40.948,39.78,32.483,26.079,33.317],[-84.895,-85.963,-75.671,-92.18,-91.511,-75.382,-94.16,-82.517,-72.233,-106.827,-74.25,-92.084,-81.383,-80.367,-79.122,-80.117,-83.352,-84.532,-99.621,-103.297,-101.581,-100.024,-103.254,-100.894,-83.128,-86.066,-96.216,-80.283,-93.553,-81.994,-80.241,-95.339,-78.39,-80.151,-95.949,-91.737,-84.942,-93.333,-90.221,-95.404,-98.472,-99.174,-105.516,-110.846,-118.386,-77.633,-87.179,-90.322,-92.15,-77.515,-75.078,-75.362,-77.975,-85.663,-92.215,-99.83,-104.75,-118.716,-74.056,-73.127,-71.491,-71.295,-71.283,-76.104,-84.456,-95.047,-91.673,-93.022,-93.566,-93.359,-95.026,-91.15,-93.114,-76.429,-98.426,-99.771,-111.723,-112.016,-113.768,-120.4,-70.304,-72.267,-69.596,-85.568,-89.033,-88.517,-88.703,-99.843,-95.212,-93.217,-92.831,-108.546,-118.957,-117.809,-68.017,-100.757,-101.44,-122.893,-94.402,-87.183,-90.238,-81.737,-80.162,-79.317],5,null,null,{"interactive":true,"className":"","stroke":true,"color":"red","weight":5,"opacity":0.5,"fill":true,"fillColor":"red","fillOpacity":0.2},null,null,["USAFID: 720257 <br> STATE GA","USAFID: 720265 <br> STATE AL","USAFID: 720282 <br> STATE NC","USAFID: 720283 <br> STATE MN","USAFID: 720309 <br> STATE IA","USAFID: 720324 <br> STATE PA","USAFID: 720412 <br> STATE IA","USAFID: 720414 <br> STATE OH","USAFID: 720493 <br> STATE VT","USAFID: 720521 <br> STATE WY","USAFID: 720581 <br> STATE NJ","USAFID: 720587 <br> STATE LA","USAFID: 720602 <br> STATE SC","USAFID: 720611 <br> STATE SC","USAFID: 720613 <br> STATE SC","USAFID: 720633 <br> STATE SC","USAFID: 720651 <br> STATE OH","USAFID: 720713 <br> STATE OH","USAFID: 720853 <br> STATE ND","USAFID: 720861 <br> STATE ND","USAFID: 720866 <br> STATE ND","USAFID: 720867 <br> STATE ND","USAFID: 720868 <br> STATE ND","USAFID: 720871 <br> STATE ND","USAFID: 720962 <br> STATE GA","USAFID: 720974 <br> STATE TN","USAFID: 722006 <br> STATE MN","USAFID: 722024 <br> STATE FL","USAFID: 722032 <br> STATE MN","USAFID: 722034 <br> STATE FL","USAFID: 722037 <br> STATE FL","USAFID: 722097 <br> STATE IA","USAFID: 722131 <br> STATE NC","USAFID: 722148 <br> STATE NC","USAFID: 722164 <br> STATE OK","USAFID: 722188 <br> STATE AR","USAFID: 722255 <br> STATE GA","USAFID: 722334 <br> STATE LA","USAFID: 722354 <br> STATE MS","USAFID: 722448 <br> STATE TX","USAFID: 722523 <br> STATE TX","USAFID: 722533 <br> STATE TX","USAFID: 722683 <br> STATE NM","USAFID: 722728 <br> STATE AZ","USAFID: 722950 <br> STATE CA","USAFID: 723067 <br> STATE NC","USAFID: 723249 <br> STATE TN","USAFID: 723300 <br> STATE MO","USAFID: 723405 <br> STATE AR","USAFID: 724036 <br> STATE VA","USAFID: 724075 <br> STATE NJ","USAFID: 724093 <br> STATE DE","USAFID: 724177 <br> STATE WV","USAFID: 724235 <br> STATE KY","USAFID: 724450 <br> STATE MO","USAFID: 724655 <br> STATE KS","USAFID: 724695 <br> STATE CO","USAFID: 724885 <br> STATE NV","USAFID: 725025 <br> STATE NJ","USAFID: 725040 <br> STATE CT","USAFID: 725054 <br> STATE RI","USAFID: 725059 <br> STATE MA","USAFID: 725079 <br> STATE RI","USAFID: 725190 <br> STATE NY","USAFID: 725395 <br> STATE MI","USAFID: 725453 <br> STATE IA","USAFID: 725454 <br> STATE IA","USAFID: 725464 <br> STATE IA","USAFID: 725466 <br> STATE IA","USAFID: 725469 <br> STATE IA","USAFID: 725479 <br> STATE IA","USAFID: 725487 <br> STATE IA","USAFID: 725493 <br> STATE IA","USAFID: 725514 <br> STATE MD","USAFID: 725525 <br> STATE NE","USAFID: 725624 <br> STATE NE","USAFID: 725724 <br> STATE UT","USAFID: 725750 <br> STATE UT","USAFID: 725867 <br> STATE ID","USAFID: 725976 <br> STATE OR","USAFID: 726060 <br> STATE ME","USAFID: 726165 <br> STATE NH","USAFID: 726190 <br> STATE ME","USAFID: 726387 <br> STATE MI","USAFID: 726415 <br> STATE WI","USAFID: 726457 <br> STATE WI","USAFID: 726509 <br> STATE WI","USAFID: 726518 <br> STATE SD","USAFID: 726561 <br> STATE MN","USAFID: 726577 <br> STATE MN","USAFID: 726596 <br> STATE MN","USAFID: 726770 <br> STATE MT","USAFID: 726830 <br> STATE OR","USAFID: 726886 <br> STATE OR","USAFID: 727120 <br> STATE ME","USAFID: 727640 <br> STATE ND","USAFID: 727677 <br> STATE ND","USAFID: 727924 <br> STATE WA","USAFID: 743312 <br> STATE AR","USAFID: 744660 <br> STATE IN","USAFID: 744666 <br> STATE IL","USAFID: 747805 <br> STATE GA","USAFID: 747830 <br> STATE FL","USAFID: 747918 <br> STATE SC"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[25.91,48.929],"lng":[-123.283,-68.017]}},"evals":[],"jsHooks":[]}</script>
 
 Knit the doc and save it on GitHub.
 
@@ -412,6 +412,723 @@ Use the following breakdown for elevation:
 - Low: elev \< 93
 - Mid: elev \>= 93 and elev \< 401
 - High: elev \>= 401
+
+``` r
+library(tidyr)
+
+# Categorize stations by elevation
+met[, elev_cat := ifelse(elev < 93, "Low",
+                         ifelse(elev < 401, "Mid", "High"))]
+
+# Calculate average temperature for each state and elevation category
+summary_df <- met %>%
+  group_by(STATE, elev_cat) %>%
+  summarise(avg_temp = mean(temp, na.rm = TRUE)) %>%
+  pivot_wider(names_from = elev_cat, values_from = avg_temp)
+```
+
+    ## `summarise()` has grouped output by 'STATE'. You can override using the
+    ## `.groups` argument.
+
+``` r
+# Display the table
+summary_df %>%
+  kable("html") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+```
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+STATE
+</th>
+<th style="text-align:right;">
+High
+</th>
+<th style="text-align:right;">
+Low
+</th>
+<th style="text-align:right;">
+Mid
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+AL
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+25.07106
+</td>
+<td style="text-align:right;">
+23.79775
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AR
+</td>
+<td style="text-align:right;">
+23.723926
+</td>
+<td style="text-align:right;">
+25.58698
+</td>
+<td style="text-align:right;">
+24.40578
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AZ
+</td>
+<td style="text-align:right;">
+23.892609
+</td>
+<td style="text-align:right;">
+29.28585
+</td>
+<td style="text-align:right;">
+30.38057
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CA
+</td>
+<td style="text-align:right;">
+18.148808
+</td>
+<td style="text-align:right;">
+18.25508
+</td>
+<td style="text-align:right;">
+18.77071
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CO
+</td>
+<td style="text-align:right;">
+15.184075
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CT
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+19.37249
+</td>
+<td style="text-align:right;">
+18.78433
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DE
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+21.40611
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FL
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+26.61484
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+24.80529
+</td>
+<td style="text-align:right;">
+23.23841
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+IA
+</td>
+<td style="text-align:right;">
+21.992787
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+22.26228
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ID
+</td>
+<td style="text-align:right;">
+16.415667
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+IL
+</td>
+<td style="text-align:right;">
+20.843173
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+22.11707
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+IN
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+20.12731
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+KS
+</td>
+<td style="text-align:right;">
+22.098776
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+24.16196
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+KY
+</td>
+<td style="text-align:right;">
+20.178196
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+21.36103
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+LA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+27.61819
+</td>
+<td style="text-align:right;">
+26.09414
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+17.44477
+</td>
+<td style="text-align:right;">
+17.59058
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MD
+</td>
+<td style="text-align:right;">
+20.648332
+</td>
+<td style="text-align:right;">
+21.25462
+</td>
+<td style="text-align:right;">
+20.62255
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ME
+</td>
+<td style="text-align:right;">
+15.329681
+</td>
+<td style="text-align:right;">
+15.23159
+</td>
+<td style="text-align:right;">
+15.43930
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MI
+</td>
+<td style="text-align:right;">
+17.977982
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+18.54432
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MN
+</td>
+<td style="text-align:right;">
+19.931963
+</td>
+<td style="text-align:right;">
+22.66275
+</td>
+<td style="text-align:right;">
+21.15523
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MO
+</td>
+<td style="text-align:right;">
+23.300286
+</td>
+<td style="text-align:right;">
+25.79654
+</td>
+<td style="text-align:right;">
+23.77652
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MS
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+26.34285
+</td>
+<td style="text-align:right;">
+24.66682
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MT
+</td>
+<td style="text-align:right;">
+16.293015
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NC
+</td>
+<td style="text-align:right;">
+18.046833
+</td>
+<td style="text-align:right;">
+22.82945
+</td>
+<td style="text-align:right;">
+21.21073
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ND
+</td>
+<td style="text-align:right;">
+20.415848
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+21.79236
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NE
+</td>
+<td style="text-align:right;">
+21.048920
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+23.48598
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NH
+</td>
+<td style="text-align:right;">
+7.243417
+</td>
+<td style="text-align:right;">
+17.78844
+</td>
+<td style="text-align:right;">
+16.77731
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NJ
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+19.96563
+</td>
+<td style="text-align:right;">
+19.31963
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NM
+</td>
+<td style="text-align:right;">
+22.448418
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NV
+</td>
+<td style="text-align:right;">
+20.849170
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NY
+</td>
+<td style="text-align:right;">
+15.887585
+</td>
+<td style="text-align:right;">
+18.75621
+</td>
+<td style="text-align:right;">
+18.31489
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OH
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+19.43774
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OK
+</td>
+<td style="text-align:right;">
+24.000040
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+25.07676
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OR
+</td>
+<td style="text-align:right;">
+16.711553
+</td>
+<td style="text-align:right;">
+15.20318
+</td>
+<td style="text-align:right;">
+16.39100
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PA
+</td>
+<td style="text-align:right;">
+17.286934
+</td>
+<td style="text-align:right;">
+20.34185
+</td>
+<td style="text-align:right;">
+19.40527
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+RI
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+17.88116
+</td>
+<td style="text-align:right;">
+17.46589
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SC
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+23.68407
+</td>
+<td style="text-align:right;">
+22.38995
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SD
+</td>
+<td style="text-align:right;">
+20.639922
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+22.79495
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TN
+</td>
+<td style="text-align:right;">
+19.457179
+</td>
+<td style="text-align:right;">
+25.81362
+</td>
+<td style="text-align:right;">
+22.89642
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TX
+</td>
+<td style="text-align:right;">
+26.500393
+</td>
+<td style="text-align:right;">
+28.74462
+</td>
+<td style="text-align:right;">
+28.08021
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+UT
+</td>
+<td style="text-align:right;">
+19.754720
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+VA
+</td>
+<td style="text-align:right;">
+17.954522
+</td>
+<td style="text-align:right;">
+21.34826
+</td>
+<td style="text-align:right;">
+20.49998
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+VT
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+<td style="text-align:right;">
+16.89971
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+WA
+</td>
+<td style="text-align:right;">
+16.810354
+</td>
+<td style="text-align:right;">
+15.25193
+</td>
+<td style="text-align:right;">
+17.80542
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+WI
+</td>
+<td style="text-align:right;">
+17.994615
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+19.56563
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+WV
+</td>
+<td style="text-align:right;">
+17.492150
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+19.31079
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+WY
+</td>
+<td style="text-align:right;">
+13.748173
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+</tbody>
+</table>
 
 Knit the document, commit your changes, and push them to GitHub.
 
@@ -430,6 +1147,100 @@ need the `mgcv` package and `gam()` function to do this.
 - fit both a linear model and a spline model (use `gam()` with a cubic
   regression spline on wind speed). Summarize and plot the results from
   the models and interpret which model is the best fit and why.
+
+``` r
+# Filter data and create a scatterplot
+df <- met %>%
+  filter(between(atm.press, 1000, 1020)) %>%
+  collect()
+
+ggplot(df, aes(x = atm.press, y = temp)) +
+  geom_point() +
+  geom_smooth(method = "lm", color = "red") +
+  geom_smooth(color = "blue")
+```
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: Removed 389 rows containing non-finite values (`stat_smooth()`).
+
+    ## `geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'
+
+    ## Warning: Removed 389 rows containing non-finite values (`stat_smooth()`).
+
+    ## Warning: Removed 389 rows containing missing values (`geom_point()`).
+
+![](README_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+
+``` r
+# Fit a linear model
+linear_model <- lm(temp ~ atm.press, data = df)
+
+# Fit a spline model
+spline_model <- gam(temp ~ s(wind.sp, bs = "cr"), data = df)
+
+# Summarize the models
+summary(linear_model)
+```
+
+    ## 
+    ## Call:
+    ## lm(formula = temp ~ atm.press, data = df)
+    ## 
+    ## Residuals:
+    ##      Min       1Q   Median       3Q      Max 
+    ## -25.7708  -4.5256  -0.0794   4.6730  22.5143 
+    ## 
+    ## Coefficients:
+    ##              Estimate Std. Error t value Pr(>|t|)    
+    ## (Intercept) 331.66874    1.85036   179.2   <2e-16 ***
+    ## atm.press    -0.30626    0.00183  -167.4   <2e-16 ***
+    ## ---
+    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+    ## 
+    ## Residual standard error: 6.418 on 796383 degrees of freedom
+    ##   (389 observations deleted due to missingness)
+    ## Multiple R-squared:  0.03399,    Adjusted R-squared:  0.03399 
+    ## F-statistic: 2.802e+04 on 1 and 796383 DF,  p-value: < 2.2e-16
+
+``` r
+summary(spline_model)
+```
+
+    ## 
+    ## Family: gaussian 
+    ## Link function: identity 
+    ## 
+    ## Formula:
+    ## temp ~ s(wind.sp, bs = "cr")
+    ## 
+    ## Parametric coefficients:
+    ##              Estimate Std. Error t value Pr(>|t|)    
+    ## (Intercept) 22.560731   0.007835    2880   <2e-16 ***
+    ## ---
+    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+    ## 
+    ## Approximate significance of smooth terms:
+    ##              edf Ref.df    F p-value    
+    ## s(wind.sp) 7.568  8.162 3902  <2e-16 ***
+    ## ---
+    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+    ## 
+    ## R-sq.(adj) =  0.0468   Deviance explained = 4.68%
+    ## GCV = 39.782  Scale est. = 39.781    n = 648050
+
+``` r
+# Plot the models
+plot(linear_model)
+```
+
+![](README_files/figure-gfm/unnamed-chunk-10-2.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-10-3.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-10-4.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-10-5.png)<!-- -->
+
+``` r
+plot(spline_model)
+```
+
+![](README_files/figure-gfm/unnamed-chunk-10-6.png)<!-- -->
 
 ## Deliverables
 

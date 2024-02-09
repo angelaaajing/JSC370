@@ -271,7 +271,22 @@ Use the following breakdown for elevation:
 - High: elev >= 401
 
 ```{r}
+library(tidyr)
 
+# Categorize stations by elevation
+met[, elev_cat := ifelse(elev < 93, "Low",
+                         ifelse(elev < 401, "Mid", "High"))]
+
+# Calculate average temperature for each state and elevation category
+summary_df <- met %>%
+  group_by(STATE, elev_cat) %>%
+  summarise(avg_temp = mean(temp, na.rm = TRUE)) %>%
+  pivot_wider(names_from = elev_cat, values_from = avg_temp)
+
+# Display the table
+summary_df %>%
+  kable("html") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
 ```
 
 
@@ -287,7 +302,29 @@ Let's practice running regression models with smooth functions on X. We need the
 - fit both a linear model and a spline model (use `gam()` with a cubic regression spline on wind speed). Summarize and plot the results from the models and interpret which model is the best fit and why.
 
 ```{r}
+# Filter data and create a scatterplot
+df <- met %>%
+  filter(between(atm.press, 1000, 1020)) %>%
+  collect()
 
+ggplot(df, aes(x = atm.press, y = temp)) +
+  geom_point() +
+  geom_smooth(method = "lm", color = "red") +
+  geom_smooth(color = "blue")
+
+# Fit a linear model
+linear_model <- lm(temp ~ atm.press, data = df)
+
+# Fit a spline model
+spline_model <- gam(temp ~ s(wind.sp, bs = "cr"), data = df)
+
+# Summarize the models
+summary(linear_model)
+summary(spline_model)
+
+# Plot the models
+plot(linear_model)
+plot(spline_model)
 ```
 
 ## Deliverables
