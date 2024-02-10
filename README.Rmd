@@ -94,6 +94,7 @@ Once you are done setting up the project, you can now start working with the MET
 1. Load the `data.table` (and the `dtplyr` and `dplyr` packages), `mgcv`, `ggplot2`, `leaflet`, `kableExtra`.
 
 ```{r packages = "warnings=FALSE"}
+library(webshot)
 library(data.table)
 library(dtplyr)
 library(dplyr)
