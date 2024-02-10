@@ -293,6 +293,7 @@ summary_df %>%
 Knit the document, commit your changes, and push them to GitHub. 
 
 
+
 ## Question 5: Advanced Regression
 
 Let's practice running regression models with smooth functions on X. We need the `mgcv` package and `gam()` function to do this.
@@ -326,6 +327,8 @@ summary(spline_model)
 plot(linear_model)
 plot(spline_model)
 ```
+
+Based on these values, the spline model has a higher R-squared and lower deviance explained, suggesting it might be a better fit to the data. 
 
 ## Deliverables
 
