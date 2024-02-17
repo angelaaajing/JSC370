@@ -1,6 +1,9 @@
 ---
 title: "Lab 06 - Regular Expressions and Web Scraping"
-output: html_document
+author: "Jing Yu"
+date: "Feb 16, 2024"
+output: github_document
+always_allow_html: true
 ---
 
 ```{r setup, echo=FALSE}
