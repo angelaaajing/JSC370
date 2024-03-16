@@ -1,2 +1,2 @@
 ## JSC370 labs
-[HTML - Lab 09](https://htmlpreview.github.io/?https://github.com/angelaaajing/JSC370-labs/blob/main/lab09/lab09-hpc.html)
+[HTML - Lab 10](https://htmlpreview.github.io/?https://github.com/angelaaajing/JSC370-labs/blob/main/lab10/lab10-ml.html)
